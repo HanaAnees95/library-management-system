@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{283FD412-8016-44AE-B48A-6EF22118D344}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>sarasavi_library_management_system</RootNamespace>
+    <AssemblyName>sarasavi_library_management_system</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add_books.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_books.Designer.cs">
+      <DependentUpon>add_books.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_borrow_book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_borrow_book.Designer.cs">
+      <DependentUpon>add_borrow_book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_library_member.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_library_member.Designer.cs">
+      <DependentUpon>add_library_member.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_library_staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_library_staff.Designer.cs">
+      <DependentUpon>add_library_staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_library_visitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_library_visitor.Designer.cs">
+      <DependentUpon>add_library_visitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete_library_member.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete_library_member.Designer.cs">
+      <DependentUpon>delete_library_member.cs</DependentUpon>
+    </Compile>
+    <Compile Include="return_book_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="return_book_details.Designer.cs">
+      <DependentUpon>return_book_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="config.cs" />
+    <Compile Include="delete_books.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete_books.Designer.cs">
+      <DependentUpon>delete_books.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete_borrow_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete_borrow_details.Designer.cs">
+      <DependentUpon>delete_borrow_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete_inquiry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete_inquiry.Designer.cs">
+      <DependentUpon>delete_inquiry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete_library_staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete_library_staff.Designer.cs">
+      <DependentUpon>delete_library_staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete_reserved_books.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete_reserved_books.Designer.cs">
+      <DependentUpon>delete_reserved_books.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete_return_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete_return_details.Designer.cs">
+      <DependentUpon>delete_return_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete_visitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete_visitor.Designer.cs">
+      <DependentUpon>delete_visitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="program.cs" />
+    <Compile Include="search_all_members.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="search_all_members.Designer.cs">
+      <DependentUpon>search_all_members.cs</DependentUpon>
+    </Compile>
+    <Compile Include="search_borrow_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="search_borrow_details.Designer.cs">
+      <DependentUpon>search_borrow_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="search_inquiry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="search_inquiry.Designer.cs">
+      <DependentUpon>search_inquiry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="search_reservation_detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="search_reservation_detail.Designer.cs">
+      <DependentUpon>search_reservation_detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="search_library_staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="search_library_staff.Designer.cs">
+      <DependentUpon>search_library_staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="search_return_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="search_return_details.Designer.cs">
+      <DependentUpon>search_return_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="search_visitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="search_visitor.Designer.cs">
+      <DependentUpon>search_visitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update_visitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_visitor.Designer.cs">
+      <DependentUpon>update_visitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update_borrow_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_borrow_details.Designer.cs">
+      <DependentUpon>update_borrow_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update_inquiry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_inquiry.Designer.cs">
+      <DependentUpon>update_inquiry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update_library_staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_library_staff.Designer.cs">
+      <DependentUpon>update_library_staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="library_staff_home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="library_staff_home.Designer.cs">
+      <DependentUpon>library_staff_home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="new_inquiry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="new_inquiry.Designer.cs">
+      <DependentUpon>new_inquiry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reserve_book_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reserve_book_details.Designer.cs">
+      <DependentUpon>reserve_book_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="search_book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="search_book.Designer.cs">
+      <DependentUpon>search_book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="search_member.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="search_member.Designer.cs">
+      <DependentUpon>search_member.cs</DependentUpon>
+    </Compile>
+    <Compile Include="start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="start.Designer.cs">
+      <DependentUpon>start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="update_books.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_books.Designer.cs">
+      <DependentUpon>update_books.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update_member.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_member.Designer.cs">
+      <DependentUpon>update_member.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update_reserved_books.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_reserved_books.Designer.cs">
+      <DependentUpon>update_reserved_books.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update_return_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_return_details.Designer.cs">
+      <DependentUpon>update_return_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_books.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_books.Designer.cs">
+      <DependentUpon>view_books.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="add_books.resx">
+      <DependentUpon>add_books.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_borrow_book.resx">
+      <DependentUpon>add_borrow_book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_library_member.resx">
+      <DependentUpon>add_library_member.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_library_staff.resx">
+      <DependentUpon>add_library_staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_library_visitor.resx">
+      <DependentUpon>add_library_visitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete_library_member.resx">
+      <DependentUpon>delete_library_member.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="return_book_details.resx">
+      <DependentUpon>return_book_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete_books.resx">
+      <DependentUpon>delete_books.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete_borrow_details.resx">
+      <DependentUpon>delete_borrow_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete_inquiry.resx">
+      <DependentUpon>delete_inquiry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete_library_staff.resx">
+      <DependentUpon>delete_library_staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete_reserved_books.resx">
+      <DependentUpon>delete_reserved_books.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete_return_details.resx">
+      <DependentUpon>delete_return_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete_visitor.resx">
+      <DependentUpon>delete_visitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reserve_book_details.resx">
+      <DependentUpon>reserve_book_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="search_all_members.resx">
+      <DependentUpon>search_all_members.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="search_borrow_details.resx">
+      <DependentUpon>search_borrow_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="search_inquiry.resx">
+      <DependentUpon>search_inquiry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="search_reservation_detail.resx">
+      <DependentUpon>search_reservation_detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="search_library_staff.resx">
+      <DependentUpon>search_library_staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="search_member.resx">
+      <DependentUpon>search_member.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="search_return_details.resx">
+      <DependentUpon>search_return_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="search_visitor.resx">
+      <DependentUpon>search_visitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_visitor.resx">
+      <DependentUpon>update_visitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_borrow_details.resx">
+      <DependentUpon>update_borrow_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_inquiry.resx">
+      <DependentUpon>update_inquiry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_library_staff.resx">
+      <DependentUpon>update_library_staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="library_staff_home.resx">
+      <DependentUpon>library_staff_home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="new_inquiry.resx">
+      <DependentUpon>new_inquiry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="search_book.resx">
+      <DependentUpon>search_book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="start.resx">
+      <DependentUpon>start.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="update_books.resx">
+      <DependentUpon>update_books.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_member.resx">
+      <DependentUpon>update_member.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_reserved_books.resx">
+      <DependentUpon>update_reserved_books.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_return_details.resx">
+      <DependentUpon>update_return_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_books.resx">
+      <DependentUpon>view_books.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\library.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\376152628_249e3630c0_b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\376152628_249e3630c0_b1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vcredist.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SMSA_Library_Staff_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mrl_staff_Robinson_lrg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %289%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2810%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %288%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2810%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %286%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %288%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%292.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
